@@ -1,0 +1,33 @@
+<div ng-controller="searchListController as searchListCtrl">
+	<input type="text" ng-model="searchTerm" placeholder="Search definitions" ng-change="updateTerm()"/>
+	<h2>Search Term : {{searchTerm}}</h2>
+	<button ng-click="getDefinitions()">Submit</button>
+	<ul>
+      <li>Tags: {{term.tags}}</li>
+      <li ng-repeat="t in term.list">
+        <ul>
+            <li>{{t.author}}</li>
+            <li>{{t.definition}}</li>         
+        </ul>     
+      </li>
+    </ul>
+    <h2>Who is this story about?</h2>
+    <p>
+      <input type="text" placeholder="name" ng-model="name" ng-change="updateFactory()" />
+    </p>
+    <h2>What is {{ name }}'s last name?</h2>
+    <p>
+      <input type="text" placeholder="last name" ng-model="last_name" ng-change="updateFactory()" />
+    </p>
+    <hr>
+    <button ng-click="getFactoryData()">Fetch current factory data</button>
+    <br>
+    <br>
+    {{factoryData}}
+</div>
+<!-- <div ng-controller="AirplaneCtrl">
+
+	
+    
+
+</div>-->

@@ -1,0 +1,23 @@
+<div ng-controller="SearchListController as searchListCtrl" class="search-results">
+  <form ng-submit="getDefinitions()">
+    <div class="form-group search-form">
+      <div class="input-group">
+        <div class="input-group-addon" ng-click="getDefinitions()"><i class="glyphicon glyphicon-search"></i></div>
+          <input type="text" class="form-control" ng-model="searchTerm" placeholder="Search definitions" ng-init="Dictionary"/>
+        </div>
+    </div>
+  </form>
+  <ul class="row">
+      <li class="col-sm-6 col-md-8">
+        <ul ng-repeat="t in term.list" class="definitions">
+            <li>Author : {{t.author}}</li>
+            <li>Definition : {{t.definition}}</li>         
+        </ul>     
+      </li>
+      <li class="col-sm-6 col-md-4">
+        <ul ng-repeat="tag in term.tags" class="tags">
+          <li> {{tag}} </li>
+        </ul>
+      </li>
+    </ul>
+</div>

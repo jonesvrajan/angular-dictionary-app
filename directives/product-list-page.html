@@ -1,0 +1,15 @@
+<ul ng-controller="productListController as productList" class="product-list ul-reset">
+  <li ng-repeat="product in productList.productlist">
+    <ul class="ul-reset clearfix">
+      <li class="col-md-4"><img ng-src="images/{{product.p_thumbnail}}.jpg"></li>
+      <li class="col-md-8">
+        <ul class="product-details ul-reset">
+          <li class="product-name">{{product.p_name}}</li>
+          <li class="product-variation">{{product.p_variation}}</li>
+          <li class="product-quantity"><input type="number" ng-model="productList.quantity" value="{{product.p_quantity}}"/></li>
+          <li class="product-price">Price: <span ng-bind="product.p_originalprice * productList.quantity  | currency "></span></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
