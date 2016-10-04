@@ -8868,5 +8868,10 @@ body {
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
+/* line 158, ../../app/styles/main.scss */
+.search-results .bg-danger {
+  padding: 10px;
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=main.css.map */

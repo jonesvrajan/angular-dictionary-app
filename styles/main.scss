@@ -69,6 +69,11 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+
+  .navbar-collapse {
+    float: right;
+  }
+
   .container {
     max-width: 980px;
   }
@@ -148,5 +153,10 @@ body {
     border-bottom: 1px solid #EEE;
     margin-bottom: 20px;
     padding-bottom: 10px;
+  }
+
+  .bg-danger {
+    padding: 10px;
+    border-radius: 5px;
   }
 }

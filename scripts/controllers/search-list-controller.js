@@ -27,12 +27,27 @@ angular.module('angularDictionaryApp')
 
   .controller('SearchListController', function($scope,dictionaryFactory) {
     $scope.getDefinitions = function() {
-        var searchTerm = $scope.searchTerm
-        dictionaryFactory.getTerms(searchTerm).success(function(data){
+      $scope.searchDictionary();  
+    }
+
+    $scope.searchTag = function (index) {
+      $scope.searchTerm  = index;
+      $scope.searchDictionary();
+    }
+
+    $scope.searchDictionary = function() {
+      dictionaryFactory.getTerms($scope.searchTerm).success(function(data){
           $scope.term=data;
-          //console.log($scope.term);
-          $scope.displayResults = true;
       });
     }
   
 })
+
+.controller('menuCtrl', ['$scope', '$location', function($scope, $location){
+
+    $scope.menuClass = function(page) {
+      var current = $location.path().substring(1);
+      return page === current ? 'active' : '';
+    };
+
+  }]);

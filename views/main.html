@@ -11,7 +11,7 @@
     <p ng-show="term.result_type == 'no_results'" class="text-center bg-danger">There are no results to display. Please re-enter word.</p>
     <ul class="row">
       <li class="col-sm-6 col-md-8">
-        <h4 ng-show="term.result_type == 'exact'">Definitions</h4>
+        <h4 ng-show="term.result_type == 'exact'"><span class="glyphicon glyphicon-list-alt"></span> Definitions</h4>
         <ul ng-repeat="t in term.list" class="definitions">
             <li>
               <blockquote>
@@ -22,9 +22,9 @@
         </ul>     
       </li>
       <li class="col-sm-6 col-md-4">
-        <h4 ng-show="term.result_type == 'exact'">Tags</h4>
+        <h4 ng-show="term.result_type == 'exact'"><span class="glyphicon glyphicon-tags"></span> Tags</h4>
         <ul class="tags">
-          <li ng-repeat="tag in term.tags"> {{tag}} </li>
+          <li ng-repeat="tag in term.tags" ng-click="searchTag(tag)"> <a href><span class="glyphicon glyphicon-tag"></span> {{tag}} </a> </li>
         </ul>
       </li>
     </ul>
