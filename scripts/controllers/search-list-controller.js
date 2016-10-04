@@ -29,8 +29,9 @@ angular.module('angularDictionaryApp')
     $scope.getDefinitions = function() {
         var searchTerm = $scope.searchTerm
         dictionaryFactory.getTerms(searchTerm).success(function(data){
-        $scope.term=data;
-        console.log($scope.term);
+          $scope.term=data;
+          //console.log($scope.term);
+          $scope.displayResults = true;
       });
     }
   

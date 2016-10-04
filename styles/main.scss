@@ -70,7 +70,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 980px;
   }
 
   /* Remove the padding we set earlier */
@@ -135,7 +135,18 @@ body {
     &.tags {
       li {
         margin-bottom: 10px;
+        display: inline-block;
+        padding: 5px 10px;
+        background: #EEE;
+        border-radius: 5px;
+        margin-right: 5px;
       }
     }
+  }
+
+  h4 {
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
   }
 }

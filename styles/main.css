@@ -8776,7 +8776,7 @@ body {
 @media screen and (min-width: 768px) {
   /* line 72, ../../app/styles/main.scss */
   .container {
-    max-width: 730px;
+    max-width: 980px;
   }
 
   /* Remove the padding we set earlier */
@@ -8851,6 +8851,17 @@ body {
 /* line 136, ../../app/styles/main.scss */
 .search-results ul.tags li {
   margin-bottom: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #EEE;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+/* line 147, ../../app/styles/main.scss */
+.search-results h4 {
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
