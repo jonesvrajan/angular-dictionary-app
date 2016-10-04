@@ -8774,13 +8774,18 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 72, ../../app/styles/main.scss */
+  /* line 73, ../../app/styles/main.scss */
+  .navbar-collapse {
+    float: right;
+  }
+
+  /* line 77, ../../app/styles/main.scss */
   .container {
     max-width: 980px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 77, ../../app/styles/main.scss */
+  /* line 82, ../../app/styles/main.scss */
   .header,
   .marketing,
   .footer {
@@ -8789,66 +8794,66 @@ body {
   }
 
   /* Space out the masthead */
-  /* line 84, ../../app/styles/main.scss */
+  /* line 89, ../../app/styles/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 88, ../../app/styles/main.scss */
+  /* line 93, ../../app/styles/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
 }
-/* line 93, ../../app/styles/main.scss */
+/* line 98, ../../app/styles/main.scss */
 .ul-reset {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 99, ../../app/styles/main.scss */
+/* line 104, ../../app/styles/main.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 104, ../../app/styles/main.scss */
+/* line 109, ../../app/styles/main.scss */
 .product-list > li {
   margin-bottom: 25px;
 }
-/* line 108, ../../app/styles/main.scss */
+/* line 113, ../../app/styles/main.scss */
 .product-list .product-details {
   padding: 20px 0;
 }
-/* line 110, ../../app/styles/main.scss */
+/* line 115, ../../app/styles/main.scss */
 .product-list .product-details li {
   margin-bottom: 10px;
 }
-/* line 112, ../../app/styles/main.scss */
+/* line 117, ../../app/styles/main.scss */
 .product-list .product-details li.product-name {
   text-transform: uppercase;
 }
-/* line 115, ../../app/styles/main.scss */
+/* line 120, ../../app/styles/main.scss */
 .product-list .product-details li.product-variation {
   text-transform: capitalize;
 }
 
-/* line 122, ../../app/styles/main.scss */
+/* line 127, ../../app/styles/main.scss */
 .input-group-addon {
   cursor: pointer;
 }
 
-/* line 127, ../../app/styles/main.scss */
+/* line 132, ../../app/styles/main.scss */
 .search-results ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 131, ../../app/styles/main.scss */
+/* line 136, ../../app/styles/main.scss */
 .search-results ul.definitions {
   margin-bottom: 15px;
 }
-/* line 136, ../../app/styles/main.scss */
+/* line 141, ../../app/styles/main.scss */
 .search-results ul.tags li {
   margin-bottom: 10px;
   display: inline-block;
@@ -8857,7 +8862,7 @@ body {
   border-radius: 5px;
   margin-right: 5px;
 }
-/* line 147, ../../app/styles/main.scss */
+/* line 152, ../../app/styles/main.scss */
 .search-results h4 {
   border-bottom: 1px solid #EEE;
   margin-bottom: 20px;
