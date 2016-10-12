@@ -26,19 +26,27 @@ angular.module('angularDictionaryApp')
      })
 
   .controller('SearchListController', function($scope,dictionaryFactory) {
+    $scope.bookmarks = [];
+
     $scope.getDefinitions = function() {
       $scope.searchDictionary();  
+      $scope.saveBookmark();
     }
 
     $scope.searchTag = function (index) {
       $scope.searchTerm  = index;
       $scope.searchDictionary();
+      $scope.saveBookmark();
     }
 
     $scope.searchDictionary = function() {
       dictionaryFactory.getTerms($scope.searchTerm).success(function(data){
           $scope.term=data;
       });
+    }
+
+    $scope.saveBookmark = function(){
+      $scope.bookmarks.push($scope.searchTerm);
     }
   
 })

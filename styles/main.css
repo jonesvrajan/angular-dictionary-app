@@ -8713,23 +8713,14 @@ body {
   padding: 0;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 18, ../../app/styles/main.scss */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 /* Custom page header */
-/* line 26, ../../app/styles/main.scss */
+/* line 18, ../../app/styles/main.scss */
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 31, ../../app/styles/main.scss */
+/* line 23, ../../app/styles/main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -8738,54 +8729,54 @@ body {
 }
 
 /* Custom page footer */
-/* line 40, ../../app/styles/main.scss */
+/* line 32, ../../app/styles/main.scss */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 2px solid #e5e5e5;
 }
 
-/* line 46, ../../app/styles/main.scss */
+/* line 38, ../../app/styles/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 51, ../../app/styles/main.scss */
+/* line 43, ../../app/styles/main.scss */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 55, ../../app/styles/main.scss */
+/* line 47, ../../app/styles/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-/* line 62, ../../app/styles/main.scss */
+/* line 54, ../../app/styles/main.scss */
 .marketing {
   margin: 40px 0;
 }
-/* line 65, ../../app/styles/main.scss */
+/* line 57, ../../app/styles/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 73, ../../app/styles/main.scss */
+  /* line 65, ../../app/styles/main.scss */
   .navbar-collapse {
     float: right;
   }
 
-  /* line 77, ../../app/styles/main.scss */
+  /* line 69, ../../app/styles/main.scss */
   .container {
     max-width: 980px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 82, ../../app/styles/main.scss */
+  /* line 74, ../../app/styles/main.scss */
   .header,
   .marketing,
   .footer {
@@ -8794,66 +8785,66 @@ body {
   }
 
   /* Space out the masthead */
-  /* line 89, ../../app/styles/main.scss */
+  /* line 81, ../../app/styles/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 93, ../../app/styles/main.scss */
+  /* line 85, ../../app/styles/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
 }
-/* line 98, ../../app/styles/main.scss */
+/* line 90, ../../app/styles/main.scss */
 .ul-reset {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 104, ../../app/styles/main.scss */
+/* line 96, ../../app/styles/main.scss */
 .navbar {
   border-radius: 0;
 }
 
-/* line 109, ../../app/styles/main.scss */
+/* line 101, ../../app/styles/main.scss */
 .product-list > li {
   margin-bottom: 25px;
 }
-/* line 113, ../../app/styles/main.scss */
+/* line 105, ../../app/styles/main.scss */
 .product-list .product-details {
   padding: 20px 0;
 }
-/* line 115, ../../app/styles/main.scss */
+/* line 107, ../../app/styles/main.scss */
 .product-list .product-details li {
   margin-bottom: 10px;
 }
-/* line 117, ../../app/styles/main.scss */
+/* line 109, ../../app/styles/main.scss */
 .product-list .product-details li.product-name {
   text-transform: uppercase;
 }
-/* line 120, ../../app/styles/main.scss */
+/* line 112, ../../app/styles/main.scss */
 .product-list .product-details li.product-variation {
   text-transform: capitalize;
 }
 
-/* line 127, ../../app/styles/main.scss */
+/* line 119, ../../app/styles/main.scss */
 .input-group-addon {
   cursor: pointer;
 }
 
-/* line 132, ../../app/styles/main.scss */
+/* line 124, ../../app/styles/main.scss */
 .search-results ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 136, ../../app/styles/main.scss */
+/* line 128, ../../app/styles/main.scss */
 .search-results ul.definitions {
   margin-bottom: 15px;
 }
-/* line 141, ../../app/styles/main.scss */
+/* line 133, ../../app/styles/main.scss */
 .search-results ul.tags li {
   margin-bottom: 10px;
   display: inline-block;
@@ -8862,13 +8853,13 @@ body {
   border-radius: 5px;
   margin-right: 5px;
 }
-/* line 152, ../../app/styles/main.scss */
+/* line 144, ../../app/styles/main.scss */
 .search-results h4 {
   border-bottom: 1px solid #EEE;
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
-/* line 158, ../../app/styles/main.scss */
+/* line 150, ../../app/styles/main.scss */
 .search-results .bg-danger {
   padding: 10px;
   border-radius: 5px;

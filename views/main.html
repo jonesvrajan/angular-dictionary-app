@@ -26,6 +26,12 @@
         <ul class="tags">
           <li ng-repeat="tag in term.tags" ng-click="searchTag(tag)"> <a href><span class="glyphicon glyphicon-tag"></span> {{tag}} </a> </li>
         </ul>
+        <div ng-show="term.result_type == 'exact'">
+          <h4>Recent Searches</h4>
+          <ul class="recent-search tags">
+            <li ng-repeat="bookmark in bookmarks track by $index" ng-click="searchTag(bookmark)"><a href><span class="glyphicon glyphicon-ok-circle"></span> {{bookmark}}</a></li>
+          </ul>
+        </div>
       </li>
     </ul>
   </div>
